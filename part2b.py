@@ -12,7 +12,7 @@ for i in range(howMany):
 print("the list is",randomList)
 print(f"searching for number {searchNumber}")
 for i in range(len(randomList)):
-    comparisons +=1
+    comparisons += 1
     if randomList[i] == searchNumber:
         found = True
         print(f"I found the number {searchNumber}!!!")
