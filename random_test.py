@@ -4,7 +4,7 @@ import random
 
 def test_random_list():
     # 1. Validation of Logic
-    result = part1.ranNums # Assumes they put logic in a function
+    result = part1.randomList # Assumes they put logic in a function
     
     assert isinstance(result, list), "Output must be a list."
     assert len(result) == 10, f"List should have 10 items, found {len(result)}."
