@@ -23,16 +23,16 @@ if toDo == 1:
     print()
     print(f"Searching for number {searchNumber}...")
     #iterates through the list to see if the searchNumber is in the list
-    for i in range(len(randomList)):
+    for i in range(howMany):
         comparisons += 1
         if randomList[i] == searchNumber:
             found = True
-            print(f"I found the number {searchNumber}!!!")
+            print(f"I found the number {searchNumber} after {comparisons} comparisons!!!")
             print("comparisons:", comparisons)
             break
-        else:
-            print(f"I didn't find the number {searchNumber} :(")
-            break
+        if comparisons == howMany:
+            if found == False:
+                print(f"I didn't find the number after {comparisons} comparisons")
 elif toDo == 2:
     evens = 0
     odds = 0
@@ -54,3 +54,5 @@ elif toDo == 2:
     sortedList.reverse()
     print("The list in reverse order from sorted is", sortedList)
     print(f"There are {odds} odd numbers and {evens} even numbers")
+else:
+    print("Welp you were supposed to enter 1 or 2 to make something happen")
